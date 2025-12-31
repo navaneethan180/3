@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navaneethan SaaS</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#111827;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#ffffff;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+nav a{
+    margin-left:24px;
+    text-decoration:none;
+    color:#374151;
+    font-weight:500;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:90px 8%;
+    gap:40px;
+}
+
+.hero-text{
+    max-width:540px;
+}
+
+.hero-text h1{
+    font-size:44px;
+    margin-bottom:18px;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#6b7280;
+    margin-bottom:28px;
+}
+
+.hero-text button{
+    padding:14px 30px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:#ffffff;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.hero-image svg{
+    width:420px;
+    max-width:100%;
+}
+
+.trust{
+    text-align:center;
+    padding:50px 8%;
+    background:#ffffff;
+}
+
+.trust p{
+    color:#6b7280;
+    margin-bottom:15px;
+}
+
+.trust span{
+    font-weight:bold;
+    margin:0 15px;
+    color:#111827;
+}
+
+.features{
+    padding:90px 8%;
+}
+
+.features h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:55px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:#ffffff;
+    padding:35px;
+    border-radius:16px;
+    text-align:center;
+}
+
+.feature-card svg{
+    width:64px;
+    margin-bottom:22px;
+}
+
+.feature-card h3{
+    margin-bottom:12px;
+}
+
+.feature-card p{
+    color:#6b7280;
+}
+
+.cta{
+    padding:90px 8%;
+    text-align:center;
+    background:#2563eb;
+    color:#ffffff;
+}
+
+.cta p{
+    margin:15px 0 30px;
+    color:#dbeafe;
+}
+
+.cta button{
+    padding:14px 32px;
+    border:none;
+    border-radius:8px;
+    background:#ffffff;
+    color:#2563eb;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+footer{
+    background:#111827;
+    color:#9ca3af;
+    padding:28px;
+    text-align:center;
+}
+
+footer span{
+    color:#ffffff;
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Navaneethan</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Solutions</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Powerful SaaS Solutions Built for Modern Businesses</h1>
+        <p>Designed, developed, and maintained by Navaneethan to help teams work smarter, faster, and more securely.</p>
+        <button>Start Free Trial</button>
+    </div>
+
+    <div class="hero-image">
+        <svg viewBox="0 0 400 300">
+            <rect width="400" height="300" rx="22" fill="#2563eb"/>
+            <rect x="45" y="55" width="310" height="38" rx="8" fill="#ffffff"/>
+            <rect x="45" y="115" width="260" height="38" rx="8" fill="#93c5fd"/>
+            <rect x="45" y="175" width="290" height="38" rx="8" fill="#60a5fa"/>
+        </svg>
+    </div>
+</section>
+
+<section class="trust">
+    <p>Trusted for quality and reliability</p>
+    <span>Secure</span>
+    <span>Scalable</span>
+    <span>Reliable</span>
+</section>
+
+<section class="features">
+    <h2>Why Choose Navaneethan SaaS</h2>
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <svg viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" fill="#2563eb"/>
+                <path d="M20 32l8 8 16-16" stroke="#fff" stroke-width="4" fill="none"/>
+            </svg>
+            <h3>High Performance</h3>
+            <p>Optimized systems ensure smooth and fast operations.</p>
+        </div>
+
+        <div class="feature-card">
+            <svg viewBox="0 0 64 64">
+                <rect x="8" y="8" width="48" height="48" rx="10" fill="#2563eb"/>
+                <circle cx="32" cy="32" r="10" fill="#ffffff"/>
+            </svg>
+            <h3>Strong Security</h3>
+            <p>Your data is protected with enterprise-grade security.</p>
+        </div>
+
+        <div class="feature-card">
+            <svg viewBox="0 0 64 64">
+                <polygon points="32,4 60,60 4,60" fill="#2563eb"/>
+                <circle cx="32" cy="40" r="8" fill="#ffffff"/>
+            </svg>
+            <h3>Simple Setup</h3>
+            <p>Quick onboarding without complex configuration.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Built & Owned by Navaneethan</h2>
+    <p>Start building smarter solutions with a platform you can trust.</p>
+    <button>Get Started</button>
+</section>
+
+<footer>
+    © 2025 <span>Navaneethan</span>. All Rights Reserved.
+</footer>
+
+</body>
+</html>
